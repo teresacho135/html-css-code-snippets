@@ -1,0 +1,104 @@
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+.hover-button {
+  background-color: yellow;
+  color: red;
+  padding: 15px;
+  margin: 20px;
+  font-size: 15px;
+  font-family: monospace;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: blue;
+  padding:30px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.dropdown-content a:hover {
+  background-color:grey;
+}
+
+.dropdown:hover .dropdown-content {
+  display:block;
+}
+
+.dropdown:hover .hover-button {
+  background-color: aqua;
+}
+
+img {
+  max-width: 50%;
+  height: auto;
+  padding: 40px;
+}
+
+.snorlax-img:hover {
+  animation: rotation 25s infinite linear;
+  -webkit-animation: rotation 25s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg)  ;
+    -webkit-transform: rotate(0deg)  ;
+    -moz-transform: rotate(0deg)  ;
+    -ms-transform: rotate(0deg)  ;
+    -o-transform: rotate(0deg)  ;
+}
+ to {
+   transform: rotate(359deg) ;
+   -webkit-transform: rotate(359deg) ;
+   -moz-transform: rotate(359deg) ;
+   -ms-transform: rotate(359deg) ;
+   -o-transform: rotate(359deg) ;
+}
+}
+
+.diglett-img {
+  position: relative;
+  animation:mymove 6s 2;
+  -webkit-animation:mymove 6s 2;
+  animation-direction: alternate;
+}
+
+@keyframes mymove {
+  0% {left: 0px; top:0px}
+  25% {left: 200px; top: 0px}
+  50% {left: 200px; top: 200px}
+  75% {left: 0px; top:200px}
+  100% {left: 0px; top: 0px}
+}
+
+#pikachu {
+  position: relative;
+  animation: makePikachuMove 3s 2;
+  -webkit-animation: makePikachuMove 3s 2;
+  animation-direction: alternate;
+}
+
+@keyframes makePikachuMove {
+  0% {left: 0px; top: 0px}
+  25% {left: 200px; top: 0}
+  50% {left: 10px; top: 200px}
+  100% {left: 200px; top: 200px}
+}
